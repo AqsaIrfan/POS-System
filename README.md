@@ -25,7 +25,7 @@ A modern, React-based Point of Sale (POS) system designed for restaurants and fo
 
 ## 📸 UI Preview
 
-> [Include screenshots or a link to a demo GIF/video here]
+> ![Roxmeat Website Preview](src/assets/POSSystemPreview.png)
 
 ---
 
