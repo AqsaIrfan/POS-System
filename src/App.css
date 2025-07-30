@@ -1,38 +1,125 @@
+:root {
+  --primary: #040c17da;
+  --secondary: #e6e9ea;
+  --tertiary: #f0f2f8;
+}
+
+.row {
+  margin: 0px !important;
+  /* padding: 0px!important; */
+}
+
+.col {
+  padding: 0 !important;
+}
+
 .App {
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #eeeeee !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.topbar {
+  padding-top: 10px;
+  height: 60px;
+  color: white;
+  background-color: var(--primary);
+  font-weight: 600;
+  font-size: 22px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.CategoriesItems {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 8% 0px;
+  border-bottom: 1px solid white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Selected_CategoriesItem {
+  background-color: red;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.MenuItems_box {
+  width: 23% !important;
+  text-align: center;
+  border: 1px solid var(--primary);
+}
+.MenuItems_price {
+  background-color: red;
+  width: 100%;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.MenuItems_name {
+  padding: 20% 0%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scroll_orderlist {
+  height: 420px;
+  overflow-y: scroll;
+}
+.orderlist {
+  border-bottom: 1px solid --primary;
+}
+.input_style {
+  margin-top: 5px !important;
+  border-radius: 4px;
+  border: 1px solid grey;
+  width: 80% !important;
+  height: 25px;
+}
+.hr_line {
+  margin: 0px;
+  padding: 0px;
+  color: var(--primary);
+  height: 2px;
+}
+.calculator {
+  position: fixed;
+  bottom: 0 !important;
+  left: 0;
+  width: 32% !important;
+  height: 270px;
+}
+.total_amt {
+  float: right;
+}
+.cal_total {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  color: white;
+  background-color: var(--primary);
+}
+.cal_numbers {
+  font-size: 22px;
+}
+.cal_numbers .col-md-3 {
+  text-align: center;
+  padding: 15px 3px;
+  border: 1px solid grey;
+}
+.discount_box {
+  width: 47% !important;
+  position: fixed;
+  bottom: 0 !important;
+  right: 0;
+}
+.discount_row {
+  width: 100%;
+  padding: 10px 2px;
+  color: white;
+  background-color: var(--primary);
+}
+.input_style_discount {
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0;
+  width: 90%;
+}
+.input_style_discount::placeholder {
+  color: white;
+  background-color: var(--primary);
+}
+.Selected_input_field {
+  border: 1px solid red;
 }
